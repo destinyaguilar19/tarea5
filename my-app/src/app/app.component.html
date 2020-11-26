@@ -1,0 +1,17 @@
+<div class="card" > 
+    <div  class="card-content" >
+        <form class="theme-form">
+            <div  [formGroup]="form">
+                <label  class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" formControlName="Nombre">
+                </div>
+                <label  class="col-sm-2 col-form-label">Apellidos</label>
+                <div class="col-sm-4" [formGroup]="form">
+                    <input type="text" class="form-control"  formControlName="Apellidos">
+                </div>
+                <button (click)="login()">Iniciar</button>
+            </div>
+        </form>
+    </div>
+</div>
